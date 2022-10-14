@@ -1,0 +1,67 @@
+@font-face {
+    font-family: CustomFont;
+    src: url("../media/font/VarelaRound-Regular.ttf");
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #303030;
+}
+
+* {
+    box-sizing: border-box;
+    color: #d3d3d3;
+}
+
+#timer {
+    font-family: CustomFont;
+    font-size: 4vh;
+}
+
+.main-container {
+    width: 55vw;
+    height: 65vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3.5em;
+    padding: 2em;
+    /* backdrop-filter: blur(5px); */
+}
+
+#timer {
+    text-align: center;
+}
+#display-field {
+    word-wrap: break-word;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 3em;
+    padding: 0 1em;
+
+    border-radius: 50em;
+    outline: none;
+    border: none;
+
+    background-color: #fca311;
+    opacity: 1;
+
+    color: #303030;
+    font-weight: 500;
+    font-size: large;
+}
+
+input[type="text"]::placeholder {
+    color: #303030;
+    font-weight: 500;
+    font-size: large;
+}

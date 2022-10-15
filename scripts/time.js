@@ -3,8 +3,9 @@ async function sleep(ms) {
 }
 
 const inputField = document.getElementById("input-field");
-const displayField = document.getElementById("display-field");
+// const displayField = document.getElementById("display-field");
 let text = "";
+
 const googleSearchEngine = "https://www.google.com/search?q=";
 inputField.addEventListener("keydown", (e) => {
     if (e.key.length < 2) text += e.key;
@@ -25,7 +26,7 @@ inputField.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         window.open(googleSearchEngine + inputField.value);
     }
-    displayField.innerText = text;
+    // displayField.innerText = text;
 });
 
 (async () => {

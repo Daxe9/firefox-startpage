@@ -1,0 +1,11 @@
+{
+    "name": "new-tab-page",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/Daxe9/firefox-startpage.git",
+    "author": "_xie <davidexie694@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "tailwindcss": "^3.1.8"
+    }
+}

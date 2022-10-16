@@ -5,21 +5,25 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>New Tab</title>
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./dist/output.css" />
         <script src="./scripts/moment.min.js" defer></script>
         <script src="./scripts/time.js" defer></script>
     </head>
-    <body>
-        <div class="main-container">
-            <h1 id="timer"></h1>
+    <body class="h-screen flex justify-center items-center">
+        <div class="main-container flex flex-col h-fit">
+            <h1
+                id="timer"
+                class="text-center text-2xl sm:text-3xl md:text-4xl mb-6"
+            ></h1>
             <input
                 type="text"
                 id="input-field"
-                placeholder="Search with google"
+                class="w-full h-12 px-4 rounded-full focus:outline-none font-medium placeholder:font-medium placeholder:text-lg"
+                placeholder="Search..."
             />
             <!-- <div id="display-field"></div> -->
 
-            <div class="links">
+            <div class="links flex justify-center h-full pt-6">
                 <div class="section">
                     <div class="subtitle">School</div>
                     <div class="link">

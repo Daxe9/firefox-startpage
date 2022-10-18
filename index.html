@@ -7,7 +7,7 @@
         <title>New Tab</title>
         <link rel="stylesheet" href="./dist/output.css" />
         <script src="./scripts/moment.min.js" defer></script>
-        <script src="./scripts/time.js" defer></script>
+        <script src="./scripts/script.js" defer></script>
     </head>
     <body class="h-screen flex justify-center items-center">
         <div class="main-container flex flex-col h-fit">
@@ -15,72 +15,15 @@
                 id="timer"
                 class="text-center text-2xl sm:text-3xl md:text-4xl mb-6"
             ></h1>
-            <input
-                type="text"
-                id="input-field"
-                class="w-full h-12 px-4 rounded-full focus:outline-none font-medium placeholder:font-medium placeholder:text-lg"
-                placeholder="Search..."
-            />
-            <!-- <div id="display-field"></div> -->
-
-            <div class="links flex justify-center h-full pt-6">
-                <div class="section">
-                    <div class="subtitle">School</div>
-                    <div class="link">
-                        <a href="https://www.itismeucci.edu.it/" target="_blank"
-                            ><img
-                                src="./media/images/school.png"
-                                class="link-icon"
-                                alt="Meucci"
-                                title="ITIS Meucci"
-                        /></a>
-                    </div>
-                    <div class="link">
-                        <a
-                            href="http://www.portaleargo.it/auth/sso/login/?login_challenge=28e62a90c72c4971bfe0a550dfaf154d"
-                            target="_blank"
-                            ><img
-                                class="link-icon"
-                                src="./media/images/family.png"
-                                alt="algo"
-                                title="Registro Elettronico"
-                        /></a>
-                    </div>
-                    <div class="link">
-                        <a
-                            href="https://mail.google.com/mail/u/1/#inbox"
-                            target="_blank"
-                            ><img
-                                class="link-icon"
-                                src="./media/images/mail.png"
-                                alt="mail"
-                                title="Mail"
-                        /></a>
-                    </div>
-                    <div class="link">
-                        <a
-                            href="https://classroom.google.com/u/1/"
-                            target="_blank"
-                            ><img
-                                class="link-icon"
-                                src="./media/images/teaching.png"
-                                alt="classroom"
-                                title="Google Classroom"
-                        /></a>
-                    </div>
-                    <div class="link">
-                        <a
-                            href="https://drive.google.com/drive/u/1/my-drive"
-                            target="_blank"
-                            ><img
-                                class="link-icon"
-                                src="./media/images/google-drive.png"
-                                alt="drive"
-                                title="Google Drive"
-                        /></a>
-                    </div>
-                </div>
+            <div class="input-wrapper relative">
+                <input
+                    type="text"
+                    id="input-field"
+                    class="w-full h-12 px-4 rounded-full focus:outline-none font-medium placeholder:font-medium placeholder:text-lg"
+                    placeholder="Search..."
+                />
             </div>
+            <!-- <div id="display-field"></div> -->
         </div>
     </body>
 </html>

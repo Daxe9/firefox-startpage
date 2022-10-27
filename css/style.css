@@ -8,18 +8,18 @@
 }
 
 :root {
-    --dark: #303030;
-    --light: #d3d3d3;
+    --primary: #303030;
+    --secondary: #d3d3d3;
     --orange: #fca311;
 }
 
 body {
-    background-color: var(--dark);
+    background-color: var(--primary);
 }
 
 * {
     box-sizing: border-box;
-    color: var(--light);
+    color: var(--secondary);
 }
 
 #timer {
@@ -41,12 +41,12 @@ body {
 
 input[type="text"] {
     /* fca311 */
-    background-color: var(--light);
-    color: var(--dark);
+    background-color: var(--secondary);
+    color: var(--primary);
 }
 
 input[type="text"]::placeholder {
-    color: var(--dark);
+    color: var(--primary);
 }
 
 #input-background {

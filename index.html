@@ -8,13 +8,28 @@
         <link rel="stylesheet" href="./dist/output.css" />
         <script src="./scripts/moment.min.js" defer></script>
         <script src="./scripts/script.js" defer></script>
+        <script src="./scripts/darkmode.js" defer></script>
     </head>
     <body class="h-screen flex justify-center items-center">
         <div class="main-container flex flex-col fit">
-            <h1
-                id="timer"
-                class="text-center text-2xl sm:text-3xl md:text-4xl mb-6"
-            ></h1>
+            <div>
+                <h1
+                    id="timer"
+                    class="text-center text-2xl sm:text-3xl md:text-4xl"
+                ></h1>
+                <div class="mx-auto rounded w-8 h-8 my-6" id="color-mode-icon">
+                    <img
+                        src="./media/images/moon.png"
+                        id="light-image"
+                        alt="dark mode"
+                    />
+                    <img
+                        src="./media/images/sunny.png"
+                        id="dark-image"
+                        alt="light mode"
+                    />
+                </div>
+            </div>
             <div class="input-wrapper relative">
                 <input
                     type="text"

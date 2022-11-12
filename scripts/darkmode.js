@@ -17,7 +17,7 @@ const imageSources = {
 };
 const times = {
     sunrise: moment("7:00am", "h:mma"),
-    sunset: moment("6:00pm", "h:mma"),
+    sunset: moment("5:00pm", "h:mma"),
 };
 
 // check whether it is between 7am and 6pm

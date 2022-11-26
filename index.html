@@ -1,48 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>New Tab</title>
-        <link rel="stylesheet" href="./dist/output.css" />
-        <script src="./scripts/moment.min.js" defer></script>
-        <script src="./scripts/script.js" defer></script>
-        <script src="./scripts/darkmode.js" defer></script>
-        <script src="./scripts/links.js" defer></script>
-    </head>
-    <body class="h-screen flex justify-center items-center">
-        <div class="main-container flex flex-col fit">
-            <div>
-                <h1
-                    id="timer"
-                    class="text-center text-2xl sm:text-3xl md:text-4xl"
-                ></h1>
-                <div class="mx-auto rounded w-8 h-8 my-6" id="color-mode-icon">
-                    <img
-                        src="./media/images/moon.png"
-                        id="light-image"
-                        alt="dark mode"
-                    />
-                    <img
-                        src="./media/images/sunny.png"
-                        id="dark-image"
-                        alt="light mode"
-                    />
-                </div>
-            </div>
-            <div class="input-wrapper relative">
-                <input
-                    type="text"
-                    id="input-field"
-                    class="w-full h-12 px-4 rounded-full focus:outline-none font-medium placeholder:font-medium placeholder:text-lg"
-                    placeholder="Search..."
-                />
-            </div>
-            <div class="flex justify-center items-center" style="height: 20vh">
-                <a id="heaven-link">The Heaven</a>
-            </div>
-            <!-- <div id="display-field"></div> -->
-        </div>
-    </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>New Tab</title>
+		<link type="text/css" rel="stylesheet" href="./dist/output.css" />
+	</head>
+	<body class="h-screen flex justify-center items-center">
+		<div class="main-container flex flex-col fit">
+			<div>
+				<h1
+					id="timer"
+					class="text-center text-2xl sm:text-3xl md:text-4xl"
+				></h1>
+				<div class="mx-auto rounded w-8 h-8 my-6" id="color-mode-icon">
+					<img
+						src="./media/images/moon.png"
+						id="light-image"
+						alt="dark mode"
+					/>
+					<img
+						src="./media/images/sunny.png"
+						id="dark-image"
+						alt="light mode"
+					/>
+				</div>
+			</div>
+			<div class="input-wrapper relative">
+				<input
+					type="text"
+					id="input-field"
+					class="w-full h-12 px-4 rounded-full focus:outline-none font-medium placeholder:font-medium placeholder:text-lg"
+					placeholder="Search..."
+				/>
+			</div>
+			<div class="flex justify-center items-center" style="height: 20vh">
+				<a id="heaven-link">The Heaven</a>
+			</div>
+		</div>
+		<script src="./scripts/moment.min.js"></script>
+		<script src="./scripts/script.js"></script>
+		<script src="./scripts/darkmode.js"></script>
+		<script src="./scripts/links.js"></script>
+	</body>
 </html>

@@ -3,56 +3,56 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: CustomFont;
-    src: url("../media/font/VarelaRound-Regular.ttf");
+	font-family: CustomFont;
+	src: url("../media/font/VarelaRound-Regular.ttf");
 }
 
 :root {
-    --primary: #303030;
-    --secondary: #d3d3d3;
-    --orange: #fca311;
+	--primary: #303030;
+	--secondary: #d3d3d3;
+	--orange: #fca311;
 }
 
 body {
-    background-color: var(--primary);
+	background-color: var(--primary);
 }
 
 * {
-    box-sizing: border-box;
-    color: var(--secondary);
+	box-sizing: border-box;
+	color: var(--secondary);
 }
 
 #timer {
-    font-family: CustomFont;
+	font-family: CustomFont;
 }
 
 .main-container {
-    width: 55vw;
-    min-height: 50vh;
-    background-color: transparent;
-    border-radius: 3.5em;
-    padding: 2em;
-    /* backdrop-filter: blur(5px); */
+	width: 55vw;
+	min-height: 50vh;
+	background-color: transparent;
+	border-radius: 3.5em;
+	padding: 2em;
+	/* backdrop-filter: blur(5px); */
 }
 
 #display-field {
-    word-wrap: break-word;
+	word-wrap: break-word;
 }
 
 input[type="text"] {
-    /* fca311 */
-    background-color: var(--secondary);
-    color: var(--primary);
+	/* fca311 */
+	background-color: var(--secondary);
+	color: var(--primary);
 }
 
 input[type="text"]::placeholder {
-    color: var(--primary);
+	color: var(--primary);
 }
 
 #input-background {
-    width: 2em;
-    height: 2em;
-    top: 0;
-    left: 0;
-    background-color: blue;
+	width: 2em;
+	height: 2em;
+	top: 0;
+	left: 0;
+	background-color: blue;
 }

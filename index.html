@@ -9,22 +9,10 @@
 	</head>
 	<body class="h-screen flex justify-center items-center">
 		<div class="main-container flex flex-col fit">
-			<div>
-				<h1
-					id="timer"
-					class="text-center text-2xl sm:text-3xl md:text-4xl"
-				></h1>
-				<div class="mx-auto rounded w-8 h-8 my-6" id="color-mode-icon">
-					<img
-						src="./media/images/moon.png"
-						id="light-image"
-						alt="dark mode"
-					/>
-					<img
-						src="./media/images/sunny.png"
-						id="dark-image"
-						alt="light mode"
-					/>
+			<div class="mb-8">
+				<div class="text-2xl sm:text-3xl md:text-4xl">
+					<span id="greet" class="font-bold"></span
+					><span id="timer"></span>
 				</div>
 			</div>
 			<div class="input-wrapper relative">
@@ -35,13 +23,16 @@
 					placeholder="Search..."
 				/>
 			</div>
-			<div class="flex justify-center items-center" style="height: 20vh">
+			<div
+				class="flex flex-col justify-center items-center"
+				style="height: 20vh"
+			>
 				<a id="heaven-link">The Heaven</a>
+				<div class="flex flex-row flex-wrap" id="links"></div>
 			</div>
 		</div>
 		<script src="./scripts/moment.min.js"></script>
 		<script src="./scripts/script.js"></script>
-		<script src="./scripts/darkmode.js"></script>
 		<script src="./scripts/links.js"></script>
 	</body>
 </html>

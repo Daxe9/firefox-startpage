@@ -5,6 +5,10 @@
 	"repository": "https://github.com/Daxe9/firefox-startpage.git",
 	"author": "_xie <davidexie694@gmail.com>",
 	"license": "MIT",
+	"scripts": {
+		"twc": "yarn tailwindcss -i ./css/style.css -o ./dist/output.css --watch",
+		"prettify": "prettier -w ."
+	},
 	"devDependencies": {
 		"tailwindcss": "^3.1.8"
 	}

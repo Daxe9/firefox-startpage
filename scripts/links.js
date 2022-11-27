@@ -1,13 +1,24 @@
-const links = [
+const mainBookmark = {
+	url: "https://leetcode.com/problemset/all/",
+	text: "The Heaven",
+};
+// set the main bookmark
+document.getElementById("heaven-link").href = mainBookmark.url;
+document.getElementById("heaven-link").innerText = mainBookmark.text;
+
+const linksE = document.getElementById("links");
+const bookmarks = [
 	{
-		tagId: "heaven-link",
-		url: "https://leetcode.com/problemset/all/",
-		text: "The Heaven",
+		url: "https://www.yuntrack.com/parcelTracking?id=YT2232521272432059",
+		name: "YunTrack",
 	},
 ];
 
-for (let link of links) {
-	const element = document.getElementById(link.tagId);
-	element.href = link.url;
-	element.innerText = link.text;
+for (const bookmark of bookmarks) {
+	const newLinkE = document.createElement("a");
+	newLinkE.classList.add("link");
+	newLinkE.href = bookmark.url;
+	newLinkE.target = "_blank";
+	newLinkE.innerText = bookmark.name;
+	linksE.appendChild(newLinkE);
 }

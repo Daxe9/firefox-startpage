@@ -85,4 +85,3 @@ function main() {
 	setColorScheme(mode);
 }
 
-main();

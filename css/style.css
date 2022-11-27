@@ -4,22 +4,30 @@
 
 @font-face {
 	font-family: CustomFont;
-	src: url("../media/font/VarelaRound-Regular.ttf");
+	src: url("../assets/font/JetBrainsMono-Regular.ttf");
+}
+
+@font-face {
+	font-family: CustomFont;
+	src: url("../assets/font/JetBrainsMono-Bold.ttf");
+	font-weight: 900;
 }
 
 :root {
-	--primary: #303030;
-	--secondary: #d3d3d3;
+	--primary: #d3d3d3;
+	--secondary: #303030;
+	--secondary-rgb: 211, 211, 211;
 	--orange: #fca311;
 }
 
 body {
-	background-color: var(--primary);
+	/*background-color: var(--primary);*/
+	background-image: url("../assets/images/jason-miller-YNwmRnCGl_8-unsplash.jpg");
 }
 
 * {
 	box-sizing: border-box;
-	color: var(--secondary);
+	color: var(--primary);
 }
 
 #timer {
@@ -27,12 +35,14 @@ body {
 }
 
 .main-container {
-	width: 55vw;
-	min-height: 50vh;
+	width: 30vw;
+	min-width: 300px;
+	min-height: 30vh;
 	background-color: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.1);
 	border-radius: 3.5em;
 	padding: 2em;
-	/* backdrop-filter: blur(5px); */
+	backdrop-filter: blur(7px);
 }
 
 #display-field {
@@ -40,13 +50,12 @@ body {
 }
 
 input[type="text"] {
-	/* fca311 */
-	background-color: var(--secondary);
+	background-color: rgb(var(--secondary-rgb));
 	color: var(--primary);
 }
 
 input[type="text"]::placeholder {
-	color: var(--primary);
+	color: var(--secondary);
 }
 
 #input-background {
@@ -55,4 +64,24 @@ input[type="text"]::placeholder {
 	top: 0;
 	left: 0;
 	background-color: blue;
+}
+
+input[class="input-link"] {
+	background-color: transparent;
+	border-radius: 0.5em;
+	border: 1px solid rgba(var(--secondary-rgb), 0.3);
+	padding: 0.1em;
+	margin-bottom: 0.2em;
+	outline: none;
+}
+
+input[class="input-link"]::placeholder {
+	color: var(--primary);
+}
+
+.link {
+	border: 1px solid rgba(var(--secondary-rgb), 0.3);
+	border-radius: 0.5em;
+	padding: 0.2em;
+	margin: 0 0.2em;
 }

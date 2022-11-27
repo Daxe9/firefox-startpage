@@ -1,28 +1,20 @@
 let text = "";
 const inputField = document.getElementById("input-field");
-const inputFieldBackgroundStyle = window;
-// padding value is added
-const inputFieldWidth = inputField.offsetWidth;
-// const displayField = document.getElementById("display-field");
 const googleSearchEngine = "https://www.google.com/search?q=";
 
-function getTextWidth(text, font) {
-	// re-use canvas object for better performance
-	const canvas =
-		getTextWidth.canvas ||
-		(getTextWidth.canvas = document.createElement("canvas"));
-	const context = canvas.getContext("2d");
-	context.font = font;
-	const metrics = context.measureText(text);
-	return metrics.width;
-}
-
-function manageInputBackground() {
-	const textInput = inputField.value;
-	const textWidth = getTextWidth(textInput, "CustomFont");
-	const percent = (textWidth / inputFieldWidth) * 100;
-	inputFieldBackgroundStyle.width = percent.toString();
-	console.log(textWidth);
+function generateGreetings(momentTime) {
+	const currentHour = Number(momentTime.format("HH"));
+	if (currentHour >= 3 && currentHour < 12) {
+		return "Good Morning";
+	} else if (currentHour >= 12 && currentHour < 15) {
+		return "Good Afternoon";
+	} else if (currentHour >= 15 && currentHour < 20) {
+		return "Good Evening";
+	} else if (currentHour >= 20 || currentHour < 3) {
+		return "Good Night";
+	} else {
+		return "Hello";
+	}
 }
 
 function urlbarControl(event) {
@@ -35,7 +27,6 @@ function urlbarControl(event) {
 			}
 			text = text.split(" ").slice(0, -1).join(" ");
 			text += " ";
-			console.log(text);
 		} else {
 			text = text.slice(0, -1);
 		}
@@ -46,20 +37,11 @@ function urlbarControl(event) {
 	}
 }
 
-async function sleep(ms) {
-	return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
 inputField.addEventListener("keydown", (e) => {
 	urlbarControl(e);
-	// displayField.innerText = text;
 });
 
-(async () => {
-	while (true) {
-		document.getElementById("timer").innerText = moment().format(
-			"dddd D MMMM, H:mm:ss"
-		);
-		await sleep(999);
-	}
-})();
+const greeting = generateGreetings(moment()) + ", Davide.\n";
+
+document.getElementById("greet").innerText = greeting;
+

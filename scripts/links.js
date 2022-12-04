@@ -12,6 +12,14 @@ const bookmarks = [
 		url: "https://www.yuntrack.com/parcelTracking?id=YT2232521272432059",
 		name: "YunTrack",
 	},
+	{
+		url: "https://www.portaleargo.it/argoweb/famiglia/index.jsf#",
+		name: "School",
+	},
+	{
+		url: "https://web.whatsapp.com/",
+		name: "Whatsapp",
+	},
 ];
 
 for (const bookmark of bookmarks) {

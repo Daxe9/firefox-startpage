@@ -44,4 +44,3 @@ inputField.addEventListener("keydown", (e) => {
 const greeting = generateGreetings(moment()) + ", Davide.\n";
 
 document.getElementById("greet").innerText = greeting;
-

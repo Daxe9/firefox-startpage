@@ -45,38 +45,15 @@ body {
 	backdrop-filter: blur(7px);
 }
 
-#display-field {
-	word-wrap: break-word;
-}
-
-input[type="text"] {
-	background-color: rgb(var(--secondary-rgb));
-	color: var(--primary);
-}
-
-input[type="text"]::placeholder {
+input[id="input-field"] {
+	background-color: var(--primary);
+	border: 1px solid rgba(var(--secondary-rgb), 0.3);
+	outline: none;
 	color: var(--secondary);
 }
 
-#input-background {
-	width: 2em;
-	height: 2em;
-	top: 0;
-	left: 0;
-	background-color: blue;
-}
-
-input[class="input-link"] {
-	background-color: transparent;
-	border-radius: 0.5em;
-	border: 1px solid rgba(var(--secondary-rgb), 0.3);
-	padding: 0.1em;
-	margin-bottom: 0.2em;
-	outline: none;
-}
-
-input[class="input-link"]::placeholder {
-	color: var(--primary);
+input[id="input-field"]::placeholder {
+	color: var(--secondary);
 }
 
 .link {
